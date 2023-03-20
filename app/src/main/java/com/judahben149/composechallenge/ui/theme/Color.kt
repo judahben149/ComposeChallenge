@@ -12,3 +12,6 @@ val Pink40 = Color(0xFF7D5260)
 
 val BlueText = Color(0xFF006AF6)
 val BlueTonalButton = Color(0x1A006AF6)
+
+val RedChip = Color(0xFFF60073)
+val BlueChip = Color(0xFF03A9F4)

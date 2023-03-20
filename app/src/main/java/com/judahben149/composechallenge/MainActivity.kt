@@ -10,6 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.judahben149.composechallenge.data.FakeDogDatabase
+import com.judahben149.composechallenge.screens.MainScreen
 import com.judahben149.composechallenge.ui.theme.ComposeChallengeTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,25 +24,18 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainScreen(dogList = FakeDogDatabase.dogList)
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     ComposeChallengeTheme {
-        Greeting("Android")
+        MainScreen(dogList = FakeDogDatabase.dogList)
     }
 }

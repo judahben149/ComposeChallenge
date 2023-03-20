@@ -14,12 +14,12 @@ data class DogInfo(
     val age: Double,
     val color: String,
     val weight: Double,
-    val imageUrl: String,
+    val imageUrl: Int,
     val description: String
 )
 
 data class OwnerInfo(
     val name: String,
     val description: String,
-    val imageUrl: String
+    val imageUrl: Int
     )

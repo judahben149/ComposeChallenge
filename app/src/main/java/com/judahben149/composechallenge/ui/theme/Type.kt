@@ -2,9 +2,15 @@ package com.judahben149.composechallenge.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.judahben149.composechallenge.R
+
+val sailecBold = FontFamily(Font(R.font.sailec_bold))
+val sailecMedium = FontFamily(Font(R.font.sailec_medium))
+val sailecRegular = FontFamily(Font(R.font.sailec_regular))
 
 // Set of Material typography styles to start with
 val Typography = Typography(
